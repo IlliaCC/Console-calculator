@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp13
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Console.WriteLine("Hello! I am a console calculator. How can I help? To begin, enter the first number");
+            int first = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter the second number");
+            int second = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter an arithmetic operation + - * /");
+            string arifmatic = Console.ReadLine();
+            Console.WriteLine("Received number");
+            if (arifmatic == "+")
+            {
+                Console.WriteLine(first + second);
+            }
+            else if (arifmatic == "-")
+            {
+                Console.WriteLine(first - second);
+            }
+            else if(arifmatic == "*")
+            {
+                Console.WriteLine(first * second);
+            }
+            else if(arifmatic == "/")
+            {
+                Console.WriteLine(first / second);
+            }
+            else
+            {
+                Console.WriteLine("There is no such arithmetic operation");
+            }
+
+        }
+    }
+}
